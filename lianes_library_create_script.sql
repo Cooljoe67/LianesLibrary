@@ -14,10 +14,10 @@ use LianesLibrary;
 
 create table books (
     book_id int auto_increment primary key
-    , isbn varchar(20) not null unique
+    , isbn varchar(20) not null
     , title varchar(255) not null
     , author varchar(255)
-    , genre varchar(255)
+    , cpy int DEFAULT 1 
 );
 
 create table readers (
