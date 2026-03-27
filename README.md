@@ -2,7 +2,7 @@
 Solution to task from the LMS pages: Liane has a large private book collection and wants to keep track of the loans of books to her friends
 
 # Project Reflection
-## We solved the in a group of thre: Suman, Bengü and my humble self.
+## We solved the in a group of three: Suman, Bengü and my humble self.
 
 ## Summary
 Main focus was usability for a person with a not-so-technical mindset. Also everry acction that is occurring here frequentlly should take minimuim effort.
