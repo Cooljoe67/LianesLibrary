@@ -1,10 +1,11 @@
 import streamlit as st
-from views import home, checkout, checkin
+from views import home, checkout, checkin, statistics
 
 PAGES = {
     "🏠 Home": home,
     "📘 Checkout": checkout,
     "📗 Check‑In": checkin,
+    "📈 Statistics": statistics,
 }
 
 if "page" not in st.session_state:
