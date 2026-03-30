@@ -1,6 +1,7 @@
 import streamlit as st
 from utils.db import get_connection
 import pandas as pd
+from utils.state import reset_checkout
 
 def render():
     st.title("📈 Statistics")
@@ -83,3 +84,6 @@ def render():
 
     cursor.close()
     conn.close()
+
+    if st.button("🏠 Back to Home"):
+        reset_checkout()

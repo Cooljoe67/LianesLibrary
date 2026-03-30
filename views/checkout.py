@@ -133,7 +133,6 @@ def render():
 
     # Step 2: ISBN
     st.subheader("2. Scan ISBN")
-
     ensure_isbn_widget_key()
 
     if st.session_state.pop("checkout_just_completed", False):
@@ -168,7 +167,8 @@ def render():
 
         meta = lookup_book_metadata(isbn)
         if meta:
-            title, author = meta
+            title = meta.get("title")
+            author = meta.get("author")
             st.success(f"Found: {title} — {author}")
         else:
             title = st.text_input("Title")
