@@ -1,17 +1,47 @@
-# LianesLibrary
-Solution to task from the LMS pages: Liane has a large private book collection and wants to keep track of the loans of books to her friends
+# 📚 LianesLibrary
 
-# Project Reflection
-## We solved the in a group of three: Suman, Bengü and my humble self.
+A solution to the LMS task: Liane has a large private book collection and wants to keep track of books she lends to friends.
 
-## Summary
-Main focus was usability for a person with a not-so-technical mindset. Also everry acction that is occurring here frequentlly should take minimuim effort.
+---
 
-## Languages and Libraries Used
-All in Python, I also use a web service to provide title and author fom a given idbn in order to minimize manual inputs, connects to a mysql library. Streamlit for make it accessibel on Lians comuter locally.
+## 🧑‍🤝‍🧑 Project Reflection
 
-## Key Learnings
-Python, SQL, Streamlit, pandas
+### 👥 Team
+This project was completed in a group of three: **Suman**, **Bengü**, and **my humble self**.
 
-## Challenges Overcame
-the technical aspacts are complicatetd enough, but to make it intuitiv and pacticsal for the user ist the main challange
+---
+
+## 📝 Summary
+Our primary focus was **usability** for someone with a not‑so‑technical mindset.  
+All frequently used actions should require **minimal effort**.  
+To reduce manual input, the app fetches **title and author information** automatically from a given ISBN via web services.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Languages & Libraries**
+- **Python**
+- **SQL**
+- **Streamlit** — for a simple, intuitive GUI  
+- **mysql.connector** — for accessing the local MySQL server  
+  - (In hindsight, **SQLAlchemy** would have been the more sensible choice.)
+
+---
+
+## 📚 Key Learnings
+- Python fundamentals and structuring a small application  
+- Streamlit for rapid UI development  
+- pandas for data handling  
+- SQL for database operations  
+
+---
+
+## 🚧 Challenges Overcome
+The technical implementation itself was not overly complex.  
+The real challenge was designing the application to be **intuitive, practical, and frustration‑free** for the end user.
+
+---
+
+## ✔️ Status
+The project is functional and fulfills the requirements of the LMS task.
