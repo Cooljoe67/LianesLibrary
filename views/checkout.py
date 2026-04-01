@@ -117,7 +117,7 @@ def _select_reader(cursor, conn):
 
 
 def render():
-    st.header("📘 Book Checkout")
+    st.header("📘 Give out a Book")
 
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)

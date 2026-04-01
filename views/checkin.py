@@ -5,7 +5,7 @@ from utils.db import get_connection
 from utils.state import reset_checkout
 
 def render():
-    st.header("📗 Book Check‑In")
+    st.header("📗 Return a Book")
 
     conn = get_connection()
     cursor = conn.cursor(dictionary=True)

@@ -3,8 +3,8 @@ from views import home, checkout, checkin, statistics
 
 PAGES = {
     "🏠 Home": home,
-    "📘 Checkout": checkout,
-    "📗 Check‑In": checkin,
+    "📘 Lend": checkout,
+    "📗 Return": checkin,
     "📈 Statistics": statistics,
 }
 

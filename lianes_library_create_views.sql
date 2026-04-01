@@ -1,3 +1,4 @@
+use lianeslibrary;
 drop view if exists v_readers;
 create view v_readers as 
 select 
@@ -26,27 +27,15 @@ drop view if exists v_checkouts;
 create view v_checkouts as 
 select Title, Author, concat (first_name, ' ', last_name) as Reader, 
 	case when return_date is null then '*GONE*' else '*BACK*' end as 'Back?', 
-	case when current_date() > due_date and return_date is null then '💀' else '' end as 'Overdue?', 
+	case when current_date() > due_date and return_date is null then 'YES' else '' end as 'Overdue?', 
     Loan_date as 'Loan Date', Due_date as 'Due Date', 
-    return_date as 'Return Date'
+    return_date as 'Return Date',
+    isbn as 'ISBN'
 from checkouts
 join readers using (reader_id)
 join books using (book_id);
 
-
-select * from v_books;
-select * from v_readers;
-
-select * from checkouts;
-
-
-delete from books where book_id=92;
-delete from checkouts where book_id in (80,96);
-
-select * from books where isbn='9780000001080';
-select * from checkouts where book_id in (80,96);
-
-drop view if exists search_readers;
+drop procedure if exists filter_view;
 
 DELIMITER $$
 
@@ -123,4 +112,16 @@ BEGIN
 END$$
 
 DELIMITER ;
-call filter_view('v_books', '*GONE* jane');
+
+drop procedure if exists reset_db;
+
+DELIMITER $$
+
+CREATE PROCEDURE reset_db()
+BEGIN
+delete from books where book_id>100;
+delete from readers where reader_id>10;
+delete from checkouts where checkout_id>72;
+END$$
+
+DELIMITER ;
