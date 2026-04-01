@@ -1,20 +1,47 @@
-# LianesLibrary
-Solution to the task from the LMS pages: Liane has a large private book collection and wants to keep track of the loans of books to her friends.
+# 📚 LianesLibrary
 
-# Project Reflection
+A solution to the LMS task: Liane has a large private book collection and wants to keep track of books she lends to friends.
 
-## We solved the task in a group of three: Suman, Bengü, and my humble self.
+---
 
-## Summary
-The main focus was usability for a person with a not‑so‑technical mindset. Every action that occurs frequently should require minimal effort. I also use web services to provide the title and author from a given ISBN in order to minimize manual input.
+## 🧑‍🤝‍🧑 Project Reflection
 
-## Languages and Libraries Used
-Everything is written in Python with some SQL code. To access the locally hosted MySQL server, I use `mysql.connector`.  
-(Should have read the LMS pages before starting — SQLAlchemy would have been the more sensible choice.)  
-Streamlit is used to provide Liane with a simple, easy‑to‑use GUI.
+### 👥 Team
+This project was completed in a group of three: **Suman**, **Bengü**, and **my humble self**.
 
-## Key Learnings
-Python, Streamlit, pandas, SQL
+---
 
-## Challenges Overcome
-The technical aspects are not so complicated, but making the application intuitive and practical for the user is the main challenge.
+## 📝 Summary
+Our primary focus was **usability** for someone with a not‑so‑technical mindset.  
+All frequently used actions should require **minimal effort**.  
+To reduce manual input, the app fetches **title and author information** automatically from a given ISBN via web services.
+
+---
+
+## 🛠️ Tech Stack
+
+### **Languages & Libraries**
+- **Python**
+- **SQL**
+- **Streamlit** — for a simple, intuitive GUI  
+- **mysql.connector** — for accessing the local MySQL server  
+  - (In hindsight, **SQLAlchemy** would have been the more sensible choice.)
+
+---
+
+## 📚 Key Learnings
+- Python fundamentals and structuring a small application  
+- Streamlit for rapid UI development  
+- pandas for data handling  
+- SQL for database operations  
+
+---
+
+## 🚧 Challenges Overcome
+The technical implementation itself was not overly complex.  
+The real challenge was designing the application to be **intuitive, practical, and frustration‑free** for the end user.
+
+---
+
+## ✔️ Status
+The project is functional and fulfills the requirements of the LMS task.
