@@ -1,17 +1,20 @@
 # LianesLibrary
-Solution to task from the LMS pages: Liane has a large private book collection and wants to keep track of the loans of books to her friends
+Solution to the task from the LMS pages: Liane has a large private book collection and wants to keep track of the loans of books to her friends.
 
 # Project Reflection
-## We solved the in a group of three: Suman, Bengü and my humble self.
+
+## We solved the task in a group of three: Suman, Bengü, and my humble self.
 
 ## Summary
-Main focus was usability for a person with a not-so-technical mindset. Also every action that is occurring here frequentlly should take minimuim effort. I also use web services to provide title and author fom a given ISBN in order to minimize manual inputs. 
+The main focus was usability for a person with a not‑so‑technical mindset. Every action that occurs frequently should require minimal effort. I also use web services to provide the title and author from a given ISBN in order to minimize manual input.
 
 ## Languages and Libraries Used
-All in Python with some SQL code. To access the locally hosted mySQL-Server I use mySql.connector. (Should have read the LMS pages before starting, SQLalchemy would have been the more sensible choice) Streamlit to provide Liane with a simple, easy to use GUI.
+Everything is written in Python with some SQL code. To access the locally hosted MySQL server, I use `mysql.connector`.  
+(Should have read the LMS pages before starting — SQLAlchemy would have been the more sensible choice.)  
+Streamlit is used to provide Liane with a simple, easy‑to‑use GUI.
 
 ## Key Learnings
 Python, Streamlit, pandas, SQL
 
-## Challenges Overcame
-The technical aspects are not so complicatetd, but to make it intuitiv and pactical for the user is the main challange
+## Challenges Overcome
+The technical aspects are not so complicated, but making the application intuitive and practical for the user is the main challenge.
